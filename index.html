@@ -112,7 +112,7 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch With Me!</h2>
-							<form id= "contact-form" method="post" action="contact.php">
+							<form id= "contact-form" method="post" action="https://formspree.io/f/mqazpkgz">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
@@ -152,25 +152,7 @@
 			</div>
 
 		<!-- Scripts -->
-			<script>
-				document.getElementById('contact-form').addEventListener('submit', function(event) {
-				event.preventDefault();
 			
-				const formData = new FormData(this);
-			
-				fetch('contact.php', {
-					method: 'POST',
-					body: formData
-				})
-				.then(response => response.text())
-				.then(data => {
-					alert(data);
-				})
-				.catch(error => {
-					alert('Oops! Something went wrong.');
-				});
-			});
-		  	</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
